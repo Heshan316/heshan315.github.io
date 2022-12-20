@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="styling/tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="btn-container">
+        <button><a href="ceylonmuseum.html">Back</a></button>
+    </div>
+    <div class="booking-con">
+        <h2>Ticket Booking</h2>
+        <p>Can Books Tickets Here!</p>
+        <form action="" id="ticket-form" method="dialog">
+            <label>Dates</label>
+            <input type="date" placeholder="Enter the date" id="datE">
+            <br><br>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Your Name" required id="fNme">
+            <br><br>
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Enter Your Number" required id="mobN">
+            <br><br>
+            <label>Email</label>
+            <input type="text" placeholder="example@gmail.com" required id="eMail">
+            <br><br>
+            <label>Confirm Email</label>
+            <input type="text" placeholder="example@gmail.com" required id="conEmail">
+            <br><br>
+            <label>Gender</label>
+            <select id="genderL">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <br><br>
+            <label for="slAd">SL Adult</label>
+            <button id="decrement1">-</button>
+            <input type="number" id="slAd" name="number" value="0" min="0" max="20">
+            <button id="increment1">+</button>
+            <br><br>
+            <label for="slCh">SL Child</label>
+            <button id="decrement2">-</button>
+            <input type="number" id="slCh" name="number" value="0" min="0" max="20">
+            <button id="increment2">+</button>
+            <br><br>
+            <label for="foA">Foreign Adult</label>
+            <button id="decrement3">-</button>
+            <input type="number" id="foA" name="number" value="0" min="0" max="20">
+            <button id="increment3">+</button>
+            <br><br>
+            <label for="foC">Foreign Child</label>
+            <button id="decrement4">-</button>
+            <input type="number" id="foC" name="number" value="0" min="0" max="20">
+            <button id="increment4">+</button>
+            <br><br>
+            <label for="inF">Infant</label>
+            <button id="decrement5">-</button>
+            <input type="number" id="inF" name="number" value="0" min="0" max="20">
+            <button id="increment5">+</button>
+            <br><br>
+            <label for="duration">Duration</label>
+            <select name="duration" id="duration">
+                <option value="3 Hours">3 Hours</option>
+                <option value="Half Day">Half Day</option>
+                <option value="Full Day">Full Day</option>
+            </select><br><br>
+
+            <div class="btn-container">
+                <h4>Current Cost</h4>
+                <p id="costval">0.00</p>
+                <button id="addTofav">Add To Favourite</button>
+                <button id="ordTofav">Order Favourite</button>
+            </div>
+            <br>
+
+            <div class="btn-container">
+                <button type="submit" id="add-btn">Add To Order</button>
+            </div>
+
+
+
+            <h2>Overall Order</h2>
+          <div id="overAllOrder"></div>
+          <h3>Cost Of Overall Order</h3>
+          <p id="totalCost" class="toCost">LKR 0.00</p>
+
+
+            <div class="btn-container">
+                <button type="submit" id="p-order">Place Order</button>
+                <p id="loyalTxt"></p>
+                <button type="submit" id="c-loyalty">Check Loyalty</button>
+            </div>
+
+                
+            </div>
+        </form>
+    </div>
+    <script src="script/tickets.js"></script>
+</body>
+
+</html>
